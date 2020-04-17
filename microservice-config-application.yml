@@ -1,24 +1,17 @@
-spring:
+ï»¿spring:
   profiles:
-    active: dev #¼¤»î¿ª·¢»·¾³
-	
-	
+    active: dev # æ¿€æ´»å¼€å‘ç¯å¢ƒé…ç½®
+
 server:
-  port: 5001
+  port: 4001 #ç«¯å£å·
 spring:
-  profiles: dev
+  profiles: dev # å¼€å‘ç¯å¢ƒ
   application:
-    name: microservice-config-service-dev
-  cloud:
-    config:
-      server:
-        git: # Ô¶³Ì¿âµÄgitµØÖ·
-          uri: https://github.com/lckj/microservice-config.git
-		  
-server: 
-  port:5001
+    name: microservice-config-dev
+
+server:
+  port: 4002 #ç«¯å£å·
 spring:
-  profiles: prd
-  application: 
-    name: microservice-config-service-prd
-	
+  profiles: prod # ç”Ÿäº§ç¯å¢ƒ
+  application:
+    name: microservice-config-prod
