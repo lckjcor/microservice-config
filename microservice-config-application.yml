@@ -1,12 +1,12 @@
-﻿spring:
-  profiles:
+spring:
+  profiles: 
     active: dev
 --
 server:
   port: 4001
-spring:
+spring: 
   profiles: dev
-  application:
+  application: 
     name: microservice-config-dev
 --
 server:
